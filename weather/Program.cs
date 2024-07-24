@@ -43,7 +43,7 @@ app.MapGet("/",()=>{
 
 app.MapGet("/converter/{celsius}", (int celsius) =>
 {
-    var fahrenheit = 32 + (int)(celsius * 1.6);
+    var fahrenheit = 32 + (int)(celsius * 1.8);
     return $"{celsius}°C is {fahrenheit}°F";
 });
 
